@@ -10,7 +10,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form action="./api/insert.php" method="post" class="row p-3">
+            <form action="./api/save.php" method="post" class="row p-3">
                 <!-- 使用extract這個function先行判斷在產出資料 -->
             <?php
                     if(isset($_GET['id'])){
