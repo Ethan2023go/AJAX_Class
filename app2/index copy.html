@@ -11,6 +11,7 @@
     <!---匯入要使用的函式庫--->
     <script src="jquery.js"></script>
   </head>
+
   <body>
     <h1 class="header">
       學生資料管理系統<button
@@ -31,11 +32,11 @@
       </div>
       <div class="classes mx-2 my-3"></div>
     </div>
+
     <div class="users d-flex flex-wrap mx-auto my-3" style="width: 64%"></div>
 
     <div id="modals"></div>
 
-    <!-- 記得增加js! -->
     <script src="../plugin/js/bootstrap.js"></script>
   </body>
 </html>
@@ -62,12 +63,12 @@
       });
 
       //註冊modal的顯示事件
-  $("#studentForm").on("show.bs.modal", () => {
-    $.get("./api/get_schools.php", (options) => {
-      $("#schools").html(options);
-    });
-  });
-  
+      $("#studentForm").on("show.bs.modal", () => {
+        $.get("./api/get_schools.php", (options) => {
+          $("#schools").html(options);
+        });
+      });
+
       //觸發顯示
       stuModal.show("studentForm");
     });
