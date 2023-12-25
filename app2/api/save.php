@@ -4,5 +4,4 @@ include_once "db.php";
 $Student->save($_POST);
 to('../index.html');
 
-// 與insert api相同故直接合成save.php
 ?>
